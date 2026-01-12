@@ -44,13 +44,6 @@
             maxZoom: 19
         }).addTo(map);
 
-        // Draw boundary rectangle
-        const rectangle = L.rectangle(bounds, {
-            color: '#000000',
-            weight: 3,
-            fillOpacity: 0
-        }).addTo(map);
-
         // School icon (red location pin)
         const schoolIcon = L.icon({
             iconUrl: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzODQgNTEyIj48cGF0aCBmaWxsPSIjZmYwMDAwIiBkPSJNMTcyLjI2OCA1MDEuNjdDMjYuOTcgMjkxLjAzMSAwIDI2OS40MTMgMCAxOTJDMCAxMDguNiA3MS4wNCAzMiAxNjAgMzJzMTYwIDc2LjYgMTYwIDE2MGMwIDc3LjQxMy0yNi45NyA5OS4wMzEtMTcyLjI2OCAzMDkuNjdjLTkuNTM1IDEzLjc3NC0yOS45MyAxMy43NzMtMzkuNDY0IDB6TTIyNCAyMDBjMC0zNS4zLTI4LjctNjQtNjQtNjRzLTY0IDI4LjctNjQgNjQgMjguNyA2NCA2NCA2NCA2NC0yOC43IDY0LTY0eiIvPjwvc3ZnPg==',
